@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace addressBookBackendApi
 {
-    public class addressBookCategory
+    public class AddressBookCategory
     {
         public String category { get; set; }
     }

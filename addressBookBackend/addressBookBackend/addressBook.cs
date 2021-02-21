@@ -5,12 +5,23 @@ using System.Threading.Tasks;
 
 namespace addressBookBackendApi
 {
-    public class addressBook
+    public class AddressBook
     {
-        public DateTime lastModified { get; }
 
-        public String firstName { get; set; }
-        public String lastName { get; set; }
+        public AddressBook()
+        {
+
+        }
+
+        public AddressBook(long id)
+        {
+            Id = id;
+        }
+        public long Id { get; }
+        public DateTime LastModified { get; }
+
+        public String FirstName { get; set; }
+        public String LastName { get; set; }
 
     }
 }

@@ -5,10 +5,10 @@ using System.Threading.Tasks;
 
 namespace addressBookBackendApi
 {
-    public class addressBookEmail
+    public class AddressBookEmail
     {
         public String emailAddress { get; set; }
 
-        public addressBookCategory category { get; set; }
+        public AddressBookCategory category { get; set; }
     }
 }
