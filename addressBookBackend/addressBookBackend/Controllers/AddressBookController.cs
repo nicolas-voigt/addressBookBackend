@@ -32,10 +32,22 @@ namespace addressBookBackendApi.Controllers
         }
 
         [HttpPost]
-        public void Post(HttpContext context)
+        [Route("{addressBookId}")]
+        public long Post(AddressBook editEntry)
         {
-            AddressBook ABook = new AddressBook();
+            return editEntry.Id;
+        }
 
+        [HttpDelete]
+        [Route("{addressBookId}")]
+        public void Delete(int addressBookId)
+        {
+        }
+
+        [HttpPut]
+        public long Put(AddressBook newEntry)
+        {
+            return newEntry.Id;
         }
     }
 }

@@ -7,6 +7,6 @@ namespace addressBookBackendApi
 {
     public class AddressBookCategory
     {
-        public String category { get; set; }
+        public String Category { get; set; }
     }
 }
